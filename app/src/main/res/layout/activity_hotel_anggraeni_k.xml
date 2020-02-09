@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HotelAnggraeniK">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#03acce"
+        android:contentDescription="@string/todobackgroundiwastakaligua" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:fillColor="#FFFFFFFF"
+                app:pageColor="#00000000"
+                app:radius="3dp"
+                app:slideInterval="3000"
+                app:strokeColor="#FF777777"
+                app:strokeWidth="1dp">
+
+            </com.synnapps.carouselview.CarouselView>
+
+            <Button
+                android:id="@+id/buttonpesanhotel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/button_color"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/pesan_sekarang" />
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                card_view:cardBackgroundColor="#E6E6E6"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="5dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:fontFamily="sans-serif"
+                android:layout_marginTop="5dp"
+                android:text="@string/deskripsi"
+                android:textColor="#FF000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/hotel_anggraeni_ketanggungan_merupakan_sebuah_hotel_yang_berada_di_ketanggungan_kabupaten_brebes_hotel_ini_memiliki_fasilitas_yang_cukup_memadai_dengan_pelayanan_yang_baik_serta_harga_kamar_yang_terjangkau_letaknya_cukup_strategis_karena_bredekatan_dengan_stasiun_ketanggungan_jaraknya_sekitar_900m_dari_hotel"
+                android:textColor="#FF000000"
+                android:textSize="14sp" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                card_view:cardBackgroundColor="#E6E6E6"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="5dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/fasilitas_hotel"
+                android:textColor="#FF000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="15dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="0dp"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="54dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:contentDescription="@string/todo"
+                    android:paddingBottom="15dp"
+                    app:srcCompat="@drawable/resepsionis3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView6"
+                    android:layout_alignEnd="@+id/imageView6"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/imageView6"
+                    android:gravity="center"
+                    android:text="@string/resepsionis"
+                    android:textColor="#FF000000"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageView6"
+                    android:contentDescription="@string/todo"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="5dp"
+                    app:srcCompat="@drawable/ac3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView7"
+                    android:layout_alignEnd="@+id/imageView7"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/imageView7"
+                    android:gravity="center"
+                    android:text="@string/ac"
+                    android:textColor="#FF000000"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageView11"
+                    android:contentDescription="@string/todo"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="5dp"
+                    app:srcCompat="@drawable/wifi3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView10"
+                    android:layout_alignEnd="@+id/imageView10"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/imageView10"
+                    android:gravity="center"
+                    android:text="@string/wifi"
+                    android:textColor="#FF000000"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp" />
+
+                <ImageView
+                    android:id="@+id/imageView11"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageView12"
+                    android:contentDescription="@string/todo"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="5dp"
+                    app:srcCompat="@drawable/parkir3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView11"
+                    android:layout_alignEnd="@+id/imageView11"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/imageView11"
+                    android:gravity="center"
+                    android:text="@string/parkir"
+                    android:textColor="#FF000000"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_marginTop="30dp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:paddingEnd="10dp"
+                    android:paddingStart="10dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/imageView7"
+                    android:contentDescription="@string/todo"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="5dp"
+                    app:srcCompat="@drawable/restoran3" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView12"
+                    android:layout_alignEnd="@+id/imageView12"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/imageView12"
+                    android:gravity="center"
+                    android:text="@string/restoran"
+                    android:textColor="#FF000000"
+                    android:textSize="8sp"
+                    android:textStyle="bold"
+                    tools:ignore="SmallSp" />
+            </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                card_view:cardBackgroundColor="#E6E6E6"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="5dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/lokasikaligua"
+                android:textColor="#FF000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/roboto"
+                android:text="@string/lokasi_hotel_anggraeni_ketanggungan_berada_di_jalan_ahmad_yani_no_159_ketanggungan_kabupaten_brebes_letak_hotel_ini_cukup_strategis_karena_berdekatan_dengan_stasiun_ketanggungan_jaraknya_sekitar_900m_dari_hotel_di_sekitar_hotel_ini_juga_terdapat_minimarket"
+                android:textColor="#FF000000"
+                android:textSize="14sp" />
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/buttonmapshotelanggraenik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/button_color"
+                android:text="@string/lokasi_hotel" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

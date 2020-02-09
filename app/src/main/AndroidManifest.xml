@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pandu.WisataBrebes">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- splashfix screen -->
+        <activity
+            android:name=".SplashScreen"
+            android:label="@string/app_name"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Main activity -->
+        <activity
+            android:name=".MainActivityMenu"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".MenuTentang" />
+        <activity android:name=".MenuWisata" />
+        <activity android:name=".MenuHotel" />
+        <activity android:name=".MenuKuliner" />
+        <activity android:name=".WisataKaligua" />
+        <activity android:name=".WisataRandusanga" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsKaligua"
+            android:label="@string/title_activity_maps_kaligua" />
+        <activity
+            android:name=".MapsRandusanga"
+            android:label="@string/title_activity_maps_randusanga" />
+        <activity android:name=".WisataMangrove" />
+        <activity android:name=".WisataWaduk" />
+        <activity
+            android:name=".MapsMangrove"
+            android:label="@string/title_activity_maps_mangrove" />
+        <activity
+            android:name=".MapsWaduk"
+            android:label="@string/title_activity_maps_waduk" />
+        <activity android:name=".HotelGrand" />
+        <activity android:name=".HotelAnggraeniK" />
+        <activity android:name=".HotelDedy" />
+        <activity android:name=".HotelAnggraeniJ" />
+        <activity
+            android:name=".MapsHotelGrand"
+            android:label="@string/title_activity_maps_hotel_grand" />
+        <activity
+            android:name=".MapsHotelDedy"
+            android:label="@string/title_activity_maps_hotel_dedy" />
+        <activity
+            android:name=".MapsHotelAnggraeniJ"
+            android:label="@string/title_activity_maps_hotel_anggraeni_j" />
+        <activity
+            android:name=".MapsHotelAnggraeniK"
+            android:label="@string/title_activity_maps_hotel_anggraeni_k" />
+        <activity android:name=".KulinerKupat" />
+        <activity android:name=".KulinerRujak" />
+        <activity android:name=".KulinerBakso" />
+        <activity android:name=".KulinerTelor" />
+        <activity
+            android:name=".MapsKulinerBakso"
+            android:label="@string/title_activity_maps_kuliner_bakso" />
+        <activity
+            android:name=".MapsKulinerRujak"
+            android:label="@string/title_activity_maps_kuliner_rujak" />
+        <activity
+            android:name=".MapsKulinerKupat"
+            android:label="@string/title_activity_maps_kuliner_kupat" />
+        <activity
+            android:name=".MapsKulinerTelor"
+            android:label="@string/title_activity_maps_kuliner_telor" />
+    </application>
+
+</manifest>

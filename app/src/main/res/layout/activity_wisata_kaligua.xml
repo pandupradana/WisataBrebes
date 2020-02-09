@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/isibuttonwisatakaligua"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WisataKaligua">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#03acce"
+        android:contentDescription="@string/todobackgroundiwastakaligua" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.synnapps.carouselview.CarouselView
+                android:id="@+id/carouselView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="5dp"
+                app:fillColor="#FFFFFFFF"
+                app:pageColor="#00000000"
+                app:radius="3dp"
+                app:slideInterval="3000"
+                app:strokeColor="#FF777777"
+                app:strokeWidth="1dp">
+            </com.synnapps.carouselview.CarouselView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                card_view:cardBackgroundColor="#E6E6E6"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="5dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/deskripsi"
+                    android:textColor="#FF000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/agrowisata_kaligua_adalah_kawasan_wisata_agro_dataran_tinggi_yang_terletak_di_desa_pandansari_kecamatan_paguyangan_kabupaten_brebes_jawa_tengah_tepatnya_di_wilayah_brebes_bagian_selatan_agrowisata_kaligua_dikelola_oleh_pt_perkebunan_nusantara_ix_persero_jawa_tengah_dan_merupakan_diversifikasi_usaha_untuk_meningkatkan_optimalisasi_aset_perusahaan_dengan_daya_dukung_potensi_alam_yang_indah_hasil_pengolahan_perkebunan_teh_kaligua_adalah_berupa_produk_hilir_teh_hitam_black_tea_dengan_merk_kaligua_dalam_kemasan_teh_celup_dan_serbuk_wisatawan_yang_berkunjung_dapat_menikmati_hangatnya_teh_hitam_kaligua_langsung_di_lokasi_atau_membelinya_sebagai_oleh_oleh"
+                    android:textColor="#FF000000"
+                    android:textSize="14sp" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                card_view:cardBackgroundColor="#E6E6E6"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="5dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/fasilitas"
+                    android:textColor="#FF000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/kawasan_wisata_agro_kaligua_memberikan_banyak_pilihan_untuk_wisata_di_samping_kebun_teh_terdapat_beberapa_situs_wisata_menarik_yang_berada_di_seputaran_kaligua_misalnya_gua_jepang_tuk_benih_gua_angin_serta_makam_pendiri_kebun_van_de_jong_beberapa_vila_milik_perkebunan_bisa_dimanfaatkan_oleh_pengunjung_yang_ingin_bermalam_untuk_melayani_wisatawan_pihak_perkebunan_menyediakan_fasilitas_homestay_penginapan_yang_cukup_baik_di_samping_itu_tersedia_pula_gedung_pertemuan_area_outbond_area_perkemahan_lapangan_olahraga_kafe_pusat_layanan_kesehatan_sarana_ibadah_dan_lain_lain_selain_itu_pengunjung_dapat_memilih_beberapa_paket_wisata_yang_disediakan"
+                    android:textColor="#FF000000"
+                    android:textSize="14sp" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                card_view:cardBackgroundColor="#E6E6E6"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="5dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/harga_tiket"
+                    android:textColor="#FF000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/tiket_masuk_ke_kawasan_wisata_kebun_teh_rp_8_000_per_orang_ntiket_masuk_ke_goa_jepang_rp_rp_3_000_per_orang_ntiket_masuk_ke_tuk_bening_rp_3_000_per_orang_ntiket_masuk_camping_rombongan_rp_8_000_per_orang"
+                    android:textColor="#FF000000"
+                    android:textSize="14sp" />
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_view3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                card_view:cardBackgroundColor="#E6E6E6"
+                card_view:cardCornerRadius="4dp"
+                card_view:cardElevation="5dp"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/lokasikaligua"
+                    android:textColor="#FF000000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/agrowisata_kaligua_terletak_sekitar_10_kilometer_dari_arah_kota_kecamatan_paguyangan_atau_sekitar_15_kilometer_dari_bumiayu_transportasi_menuju_lokasi_dapat_ditempuh_melalui_jalur_pantura_via_brebes_atau_tegal_bumiayu_kaligua_cirebon_bumiayu_kaligua_dan_jalur_selatan_via_purwokerto_paguyangan_kaligua_jalur_tersebut_melalui_jalan_utama_tegal_purwokerto_tepat_masuk_lewat_pertigaan_kaligua_kretek"
+                    android:textColor="#FF000000"
+                    android:textSize="14sp" />
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/buttonmapskaligua"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/button_color"
+                android:layout_marginBottom="5dp"
+                android:text="@string/lokasi_wisata" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

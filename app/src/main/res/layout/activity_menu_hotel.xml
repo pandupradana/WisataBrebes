@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuHotel">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#03acce"
+        android:contentDescription="@string/todo23"
+        android:scaleType="fitXY" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/menu_hotel"
+        android:textColor="#FF000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="122dp">
+
+            <Button
+                android:id="@+id/buttongrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/buttonhotelgranddian"
+                android:paddingTop="150dp"
+                android:text="@string/hotel1"
+                android:textAllCaps="false"
+                android:textColor="#FF000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonanggraenik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/buttonhotelanggraeniketanggungan"
+                android:text="@string/hotel2"
+                android:textAllCaps="false"
+                android:paddingTop="150dp"
+                android:textColor="#FF000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttondedy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/buttonhoteldedyjaya"
+                android:text="@string/hotel3"
+                android:textAllCaps="false"
+                android:paddingTop="150dp"
+                android:textColor="#FF000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonanggraenij"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonhotelanggraenijatibarang"
+                android:text="@string/hotel4"
+                android:textAllCaps="false"
+                android:paddingTop="150dp"
+                android:textColor="#FF000000"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
